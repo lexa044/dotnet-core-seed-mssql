@@ -45,3 +45,26 @@ CONSTRAINT [IX_Product] UNIQUE NONCLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
+
+-- 2. Add a demo user
+INSERT INTO [dbo].[Authentication]
+           ([Id]
+           ,[LoginName]
+           ,[Password]
+           ,[LastLogin]
+           ,[LastIPAddress]
+           ,[LastDeviceId]
+           ,[Token])
+     SELECT
+           2
+           ,'demo2'
+           ,'demo2_Sup3rPwd'
+           ,GETDATE()
+           ,''
+           ,''
+           ,''
+WHERE NOT EXISTS (
+	SELECT 1
+	FROM [dbo].[Authentication]
+	WHERE Id=2
+);
