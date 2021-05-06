@@ -2,7 +2,7 @@
 Build a fully functional, cloud-ready, and professional Web Api using the latest features in the .NET Core 3.1 and Microsoft SQL Server as your database management system.
 
 #### Features
-- Fully async for better performance
+- Fully async for better scalability
 - Using Dapper instead of Entity Framework
 - Token Protection / Route Protection using security
 - Pagination using dapper
