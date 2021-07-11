@@ -1,14 +1,11 @@
 # dotnet-core-seed-mssql
-Build a fully functional, cloud-ready, and professional Web Api using the latest features in the .NET Core 3.1 and Microsoft SQL Server as your database management system.
+Build a fully functional, cloud-ready, and professional Web Api using the latest features in the .NET Core 5.0 and Microsoft SQL Server as your database management system.
 
 #### Features
 - Fully async for better scalability
 - Using Dapper instead of Entity Framework
 - Token Protection / Route Protection using security
 - Pagination using dapper
-
-### Why .NET Core 3.1 and not .NET Core 5.0 ?
-Good question! There is a simple answer to that. At the time of writing .NET Core 3.1 holds the LTS (Long-term support) title. However, if you want to switch to .NET Core 5.0 just change your project settings.
 
 ### Getting started
 
